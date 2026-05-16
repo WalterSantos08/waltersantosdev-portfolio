@@ -1,0 +1,150 @@
+:root {
+    --brand-dark: #03045E;
+    --brand-dark-secondary: #000814;
+
+    --brand-cyan: #00D9FF;
+    --brand-blue: #3A86FF;
+    --brand-purple: #7B2CFF;
+
+    --brand-glow: rgba(0, 217, 255, 0.35);
+
+    --text-primary: #FFFFFF;
+    --text-secondary: #A8B2D1;
+}
+
+body {
+    background:
+        radial-gradient(circle at top, rgba(58, 134, 255, 0.08), transparent 45%),
+        linear-gradient(to bottom, rgba(3, 4, 94, 0.88), rgba(0, 8, 20, 0.92));
+    color: var(--text-primary);
+}
+
+/* Deixa o efeito de partículas mais visível */
+#particles-js {
+    opacity: 1;
+}
+
+/* Gradiente da Marca */
+.text-gradient {
+    background: linear-gradient(to right, var(--brand-cyan), var(--brand-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient,
+.bg-accent {
+    background: linear-gradient(
+        135deg,
+        var(--brand-cyan),
+        var(--brand-purple)
+    ) !important;
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.025);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(0, 217, 255, 0.06);
+    box-shadow: 0 0 22px rgba(0, 217, 255, 0.04);
+}
+
+.skill-card:hover,
+.project-card:hover {
+    border-color: var(--brand-cyan);
+    box-shadow:
+        0 0 20px rgba(0, 217, 255, 0.2),
+        0 0 40px rgba(123, 44, 255, 0.15);
+}
+
+/* Estilo dos Inputs */
+.input-field {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(0, 217, 255, 0.1);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-field::placeholder {
+    color: var(--text-secondary);
+}
+
+.input-field:focus {
+    border-color: var(--brand-cyan);
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.15);
+}
+
+/* Borda da Imagem Hero */
+.hero-image-wrapper {
+    position: relative;
+    padding: 10px;
+}
+
+.hero-image-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 3.5rem;
+    padding: 2px;
+    background: linear-gradient(to bottom right, var(--brand-cyan), var(--brand-purple));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+#typing-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: var(--brand-cyan);
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.nav-scrolled {
+    background: rgba(0, 8, 20, 0.68);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 217, 255, 0.06);
+    padding: 1rem 2.5rem !important;
+}
+
+/* Tags dos projetos */
+.tag {
+    background: rgba(0, 217, 255, 0.06);
+    color: var(--brand-cyan);
+    border: 1px solid rgba(0, 217, 255, 0.16);
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Ajuste de textos secundários */
+.text-gray-400,
+.text-gray-500 {
+    color: var(--text-secondary) !important;
+}
+
+/* Efeito suave nos links */
+a {
+    transition: 0.3s ease;
+}
+
+/* Imagens dos projetos */
+.project-card img {
+    filter: saturate(1.1) contrast(1.05);
+}
+
+/* Glow na imagem principal */
+.hero-image-container img {
+    box-shadow:
+        0 0 18px rgba(0, 217, 255, 0.12),
+        0 0 45px rgba(123, 44, 255, 0.08);
+}
