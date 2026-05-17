@@ -1,70 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos IA & Automação | Walter Santos</title>
+    <title>IA & Automação | Walter Santos</title>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="config-tailwind.js"></script>
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-dark text-slate-200 antialiased">
 
-    <!-- Background -->
     <div id="particles-js" class="fixed inset-0 -z-10"></div>
 
     <!-- Navbar -->
-    <!-- Navbar -->
-<nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-6 px-10">
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-6 px-10">
 
-    <div class="container mx-auto flex justify-between items-center">
+        <div class="container mx-auto flex justify-between items-center">
 
-        <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">
-            WALTER<span class="text-accent">SANTOS</span>
-        </a>
-
-        <div class="hidden md:flex space-x-8 items-center font-medium text-sm uppercase tracking-widest">
-
-            <a href="index.html#home" class="hover:text-accent transition">
-                Início
+            <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">
+                WALTER<span class="text-accent">SANTOS</span>
             </a>
 
-            <a href="index.html#sobre" class="hover:text-accent transition">
-                Sobre
-            </a>
+            <div class="hidden md:flex space-x-8 items-center font-medium text-sm uppercase tracking-widest">
 
-            <a href="index.html#habilidades" class="hover:text-accent transition">
-                Habilidades
-            </a>
+                <a href="index.html#home" class="hover:text-accent transition">Início</a>
 
-            <a href="index.html#projetos" class="hover:text-accent transition">
-                Projetos
-            </a>
+                <a href="index.html#sobre" class="hover:text-accent transition">Sobre</a>
 
-            <a href="index.html#contato"
-               class="bg-accent/10 border border-accent/50 text-accent px-6 py-2 rounded-full hover:bg-accent hover:text-dark transition-all">
-                Contato
-            </a>
+                <a href="index.html#habilidades" class="hover:text-accent transition">Habilidades</a>
+
+                <a href="index.html#projetos" class="hover:text-accent transition">Projetos</a>
+
+                <a href="index.html#contato"
+                    class="bg-accent/10 border border-accent/50 text-accent px-6 py-2 rounded-full hover:bg-accent hover:text-dark transition-all">
+                    Contato
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
-
-</nav>
     </nav>
 
     <!-- Header -->
@@ -73,7 +58,7 @@
         <div class="container mx-auto">
 
             <a href="index.html#projetos"
-               class="inline-flex items-center gap-2 text-accent font-bold mb-8 hover:underline">
+                class="inline-flex items-center gap-2 text-accent font-bold mb-8 hover:underline">
 
                 <i class="fa-solid fa-arrow-left"></i>
                 Voltar para projetos
@@ -85,99 +70,25 @@
             </h1>
 
             <p class="text-gray-400 max-w-3xl leading-relaxed text-lg">
-                Projetos relacionados à inteligência artificial,
-                automações, IA local, produtividade e soluções inteligentes com Python.
+                Explore categorias de projetos focados em inteligência artificial,
+                automações, chatbots, agentes inteligentes, produtividade e soluções com Python.
             </p>
 
         </div>
 
     </section>
 
-    <!-- Projetos -->
+    <!-- Categorias -->
     <section class="pb-24 px-6">
 
         <div class="container mx-auto">
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                <!-- Educador Financeiro IA -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up">
-
-                    <div class="p-8">
-
-                        <div class="mb-6">
-                            <i class="fa-solid fa-robot text-5xl text-accent"></i>
-                        </div>
-
-                        <h2 class="text-2xl font-bold text-white mb-3">
-                            Educador Financeiro IA
-                        </h2>
-
-                        <p class="text-gray-400 mb-6 leading-relaxed">
-                            Aplicação com IA local utilizando Ollama e Streamlit
-                            para análise financeira personalizada e educação financeira.
-                        </p>
-
-                        <div class="flex gap-2 mb-6 flex-wrap">
-                            <span class="tag">Python</span>
-                            <span class="tag">Streamlit</span>
-                            <span class="tag">Ollama</span>
-                            <span class="tag">LLM</span>
-                        </div>
-
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-accent font-bold hover:underline">
-                                Repositório
-                            </a>
-
-                            <a href="#" class="text-white/50 hover:text-white transition">
-                                Demo
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Automações Python -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up"
-                     data-aos-delay="100">
-
-                    <div class="p-8">
-
-                        <div class="mb-6">
-                            <i class="fa-brands fa-python text-5xl text-accent"></i>
-                        </div>
-
-                        <h2 class="text-2xl font-bold text-white mb-3">
-                            Automações Python
-                        </h2>
-
-                        <p class="text-gray-400 mb-6 leading-relaxed">
-                            Scripts para automação de tarefas,
-                            manipulação de arquivos, produtividade e processos repetitivos.
-                        </p>
-
-                        <div class="flex gap-2 mb-6 flex-wrap">
-                            <span class="tag">Python</span>
-                            <span class="tag">Automation</span>
-                            <span class="tag">Scripts</span>
-                        </div>
-
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Repositório
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- IA Local -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up"
-                     data-aos-delay="200">
+                <!-- IA Generativa -->
+                <a href="ia-generativa.html"
+                    class="project-card glass rounded-3xl overflow-hidden group block"
+                    data-aos="fade-up">
 
                     <div class="p-8">
 
@@ -186,31 +97,33 @@
                         </div>
 
                         <h2 class="text-2xl font-bold text-white mb-3">
-                            IA Local com Ollama
+                            IA Generativa
                         </h2>
 
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Estudos e aplicações utilizando modelos locais de IA
-                            executando diretamente na máquina.
+                            Projetos com modelos de linguagem, geração de conteúdo,
+                            análise assistida por IA e soluções inteligentes.
                         </p>
 
                         <div class="flex gap-2 mb-6 flex-wrap">
-                            <span class="tag">Ollama</span>
                             <span class="tag">LLM</span>
-                            <span class="tag">AI</span>
+                            <span class="tag">IA</span>
+                            <span class="tag">Prompt</span>
                         </div>
 
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Ver Projeto
-                        </a>
+                        <span class="text-accent font-bold hover:underline">
+                            Ver Projetos
+                        </span>
 
                     </div>
 
-                </div>
+                </a>
 
-                <!-- Assistente IA -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up">
+                <!-- Chatbots -->
+                <a href="chatbots.html"
+                    class="project-card glass rounded-3xl overflow-hidden group block"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
 
                     <div class="p-8">
 
@@ -219,95 +132,97 @@
                         </div>
 
                         <h2 class="text-2xl font-bold text-white mb-3">
-                            Assistente IA
+                            Chatbots
                         </h2>
 
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Experimentos com integração de inteligência artificial
-                            para suporte, respostas e produtividade.
+                            Assistentes conversacionais, bots de atendimento,
+                            respostas automatizadas e fluxos inteligentes.
                         </p>
 
                         <div class="flex gap-2 mb-6 flex-wrap">
-                            <span class="tag">AI</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Automation</span>
+                            <span class="tag">Chatbot</span>
+                            <span class="tag">Atendimento</span>
+                            <span class="tag">IA</span>
                         </div>
 
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Ver Projeto
-                        </a>
+                        <span class="text-accent font-bold hover:underline">
+                            Ver Chatbots
+                        </span>
 
                     </div>
 
-                </div>
+                </a>
 
-                <!-- Automação de Dados -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up"
-                     data-aos-delay="100">
+                <!-- Automações -->
+                <a href="automacoes-ia.html"
+                    class="project-card glass rounded-3xl overflow-hidden group block"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
 
                     <div class="p-8">
 
                         <div class="mb-6">
-                            <i class="fa-solid fa-gears text-5xl text-accent"></i>
+                            <i class="fa-solid fa-robot text-5xl text-accent"></i>
                         </div>
 
                         <h2 class="text-2xl font-bold text-white mb-3">
-                            Automação de Dados
+                            Automações
                         </h2>
 
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Rotinas automatizadas para processamento,
-                            leitura e tratamento de dados utilizando Python.
+                            Soluções para automatizar tarefas, processos repetitivos,
+                            fluxos de trabalho e produtividade digital.
                         </p>
 
                         <div class="flex gap-2 mb-6 flex-wrap">
                             <span class="tag">Python</span>
-                            <span class="tag">Data</span>
-                            <span class="tag">Automation</span>
+                            <span class="tag">Scripts</span>
+                            <span class="tag">Workflow</span>
                         </div>
 
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Repositório
-                        </a>
+                        <span class="text-accent font-bold hover:underline">
+                            Ver Automações
+                        </span>
 
                     </div>
 
-                </div>
+                </a>
 
-                <!-- AI Experiments -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up"
-                     data-aos-delay="200">
+                <!-- Python & IA -->
+                <a href="python-ia.html"
+                    class="project-card glass rounded-3xl overflow-hidden group block"
+                    data-aos="fade-up"
+                    data-aos-delay="300">
 
                     <div class="p-8">
 
                         <div class="mb-6">
-                            <i class="fa-solid fa-microchip text-5xl text-accent"></i>
+                            <i class="fa-brands fa-python text-5xl text-accent"></i>
                         </div>
 
                         <h2 class="text-2xl font-bold text-white mb-3">
-                            AI Experiments
+                            Python & IA
                         </h2>
 
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Estudos e experimentos envolvendo modelos de IA,
-                            produtividade e aplicações inteligentes.
+                            Projetos utilizando Python para integração com IA,
+                            APIs, análise, automação e aplicações inteligentes.
                         </p>
 
                         <div class="flex gap-2 mb-6 flex-wrap">
-                            <span class="tag">AI</span>
-                            <span class="tag">LLM</span>
                             <span class="tag">Python</span>
+                            <span class="tag">API</span>
+                            <span class="tag">AI Tools</span>
                         </div>
 
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Ver Projeto
-                        </a>
+                        <span class="text-accent font-bold hover:underline">
+                            Ver Projetos
+                        </span>
 
                     </div>
 
-                </div>
+                </a>
 
             </div>
 
@@ -326,8 +241,11 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="script.js"></script>
 
 </body>
+
 </html>

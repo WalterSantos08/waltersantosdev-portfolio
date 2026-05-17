@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,9 @@
     <script src="config-tailwind.js"></script>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
 
     <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -27,44 +30,43 @@
     <!-- Background -->
     <div id="particles-js" class="fixed inset-0 -z-10"></div>
 
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-6 px-10">
 
- <!-- Navbar -->
-<nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-6 px-10">
+        <div class="container mx-auto flex justify-between items-center">
 
-    <div class="container mx-auto flex justify-between items-center">
-
-        <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">
-            WALTER<span class="text-accent">SANTOS</span>
-        </a>
-
-        <div class="hidden md:flex space-x-8 items-center font-medium text-sm uppercase tracking-widest">
-
-            <a href="index.html#home" class="hover:text-accent transition">
-                Início
+            <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">
+                WALTER<span class="text-accent">SANTOS</span>
             </a>
 
-            <a href="index.html#sobre" class="hover:text-accent transition">
-                Sobre
-            </a>
+            <div class="hidden md:flex space-x-8 items-center font-medium text-sm uppercase tracking-widest">
 
-            <a href="index.html#habilidades" class="hover:text-accent transition">
-                Habilidades
-            </a>
+                <a href="index.html#home" class="hover:text-accent transition">
+                    Início
+                </a>
 
-            <a href="index.html#projetos" class="hover:text-accent transition">
-                Projetos
-            </a>
+                <a href="index.html#sobre" class="hover:text-accent transition">
+                    Sobre
+                </a>
 
-            <a href="index.html#contato"
-               class="bg-accent/10 border border-accent/50 text-accent px-6 py-2 rounded-full hover:bg-accent hover:text-dark transition-all">
-                Contato
-            </a>
+                <a href="index.html#habilidades" class="hover:text-accent transition">
+                    Habilidades
+                </a>
+
+                <a href="index.html#projetos" class="hover:text-accent transition">
+                    Projetos
+                </a>
+
+                <a href="index.html#contato"
+                    class="bg-accent/10 border border-accent/50 text-accent px-6 py-2 rounded-full hover:bg-accent hover:text-dark transition-all">
+                    Contato
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
-
-</nav>
+    </nav>
 
     <!-- Header -->
     <section class="pt-40 pb-16 px-6">
@@ -72,7 +74,7 @@
         <div class="container mx-auto">
 
             <a href="index.html#projetos"
-               class="inline-flex items-center gap-2 text-accent font-bold mb-8 hover:underline">
+                class="inline-flex items-center gap-2 text-accent font-bold mb-8 hover:underline">
 
                 <i class="fa-solid fa-arrow-left"></i>
                 Voltar para projetos
@@ -84,24 +86,25 @@
             </h1>
 
             <p class="text-gray-400 max-w-3xl leading-relaxed text-lg">
-                Projetos focados em análise de dados, dashboards, visualização,
-                indicadores, SQL, Python, Power BI e automação analítica.
+                Explore categorias de projetos focados em dashboards,
+                análise de dados, automações, SQL e visualização analítica.
             </p>
 
         </div>
 
     </section>
 
-    <!-- Projetos -->
+    <!-- Categorias -->
     <section class="pb-24 px-6">
 
         <div class="container mx-auto">
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                <!-- Dashboard Power BI -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up">
+                <!-- Dashboards -->
+                <a href="dashboards.html"
+                    class="project-card glass rounded-3xl overflow-hidden group block"
+                    data-aos="fade-up">
 
                     <div class="p-8">
 
@@ -110,99 +113,103 @@
                         </div>
 
                         <h2 class="text-2xl font-bold text-white mb-3">
-                            Dashboard Power BI
+                            Dashboards
                         </h2>
 
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Dashboard analítico para visualização de indicadores,
-                            métricas e apoio à tomada de decisão.
+                            Projetos com Power BI, Excel, KPIs,
+                            indicadores e visualização de dados.
                         </p>
 
                         <div class="flex gap-2 mb-6 flex-wrap">
                             <span class="tag">Power BI</span>
-                            <span class="tag">Excel</span>
-                            <span class="tag">SQL</span>
+                            <span class="tag">KPIs</span>
+                            <span class="tag">Dashboards</span>
                         </div>
 
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Ver Projeto
-                        </a>
+                        <span class="text-accent font-bold hover:underline">
+                            Ver Dashboards
+                        </span>
 
                     </div>
 
-                </div>
+                </a>
 
-                <!-- Análise Brasileirão -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up"
-                     data-aos-delay="100">
+                <!-- Análises -->
+                <a href="analises.html"
+                    class="project-card glass rounded-3xl overflow-hidden group block"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
 
                     <div class="p-8">
 
                         <div class="mb-6">
-                            <i class="fa-solid fa-futbol text-5xl text-accent"></i>
+                            <i class="fa-solid fa-magnifying-glass-chart text-5xl text-accent"></i>
                         </div>
 
                         <h2 class="text-2xl font-bold text-white mb-3">
-                            Análise Brasileirão
+                            Análises
                         </h2>
 
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Projeto em Python para análise estatística de partidas,
-                            desempenho de equipes e previsões.
+                            Estudos analíticos, estatísticas,
+                            insights e análises exploratórias de dados.
                         </p>
 
                         <div class="flex gap-2 mb-6 flex-wrap">
-                            <span class="tag">Python</span>
-                            <span class="tag">Pandas</span>
-                            <span class="tag">Data Analysis</span>
-                        </div>
-
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Repositório
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- Dashboard CSV -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up"
-                     data-aos-delay="200">
-
-                    <div class="p-8">
-
-                        <div class="mb-6">
-                            <i class="fa-solid fa-file-csv text-5xl text-accent"></i>
-                        </div>
-
-                        <h2 class="text-2xl font-bold text-white mb-3">
-                            Dashboard CSV Analytics
-                        </h2>
-
-                        <p class="text-gray-400 mb-6 leading-relaxed">
-                            Projeto de análise de arquivos CSV com visualização de dados
-                            e geração de insights.
-                        </p>
-
-                        <div class="flex gap-2 mb-6 flex-wrap">
-                            <span class="tag">Python</span>
-                            <span class="tag">CSV</span>
                             <span class="tag">Analytics</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Insights</span>
                         </div>
 
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Repositório
-                        </a>
+                        <span class="text-accent font-bold hover:underline">
+                            Ver Análises
+                        </span>
 
                     </div>
 
-                </div>
+                </a>
 
-                <!-- SQL Challenges -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up">
+                <!-- Automações -->
+                <a href="automacoes.html"
+                    class="project-card glass rounded-3xl overflow-hidden group block"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
+
+                    <div class="p-8">
+
+                        <div class="mb-6">
+                            <i class="fa-solid fa-gears text-5xl text-accent"></i>
+                        </div>
+
+                        <h2 class="text-2xl font-bold text-white mb-3">
+                            Automações
+                        </h2>
+
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Scripts e soluções para automação
+                            de tarefas e processamento de dados.
+                        </p>
+
+                        <div class="flex gap-2 mb-6 flex-wrap">
+                            <span class="tag">Automation</span>
+                            <span class="tag">ETL</span>
+                            <span class="tag">Python</span>
+                        </div>
+
+                        <span class="text-accent font-bold hover:underline">
+                            Ver Automações
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <!-- SQL & Dados -->
+                <a href="sql-dados.html"
+                    class="project-card glass rounded-3xl overflow-hidden group block"
+                    data-aos="fade-up"
+                    data-aos-delay="300">
 
                     <div class="p-8">
 
@@ -211,95 +218,27 @@
                         </div>
 
                         <h2 class="text-2xl font-bold text-white mb-3">
-                            SQL Challenges
+                            SQL & Dados
                         </h2>
 
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Coleção de desafios SQL para consultas, filtros,
-                            agregações e modelagem de dados.
+                            Consultas SQL, modelagem,
+                            agregações e manipulação de dados.
                         </p>
 
                         <div class="flex gap-2 mb-6 flex-wrap">
                             <span class="tag">SQL</span>
                             <span class="tag">MySQL</span>
-                            <span class="tag">Queries</span>
+                            <span class="tag">Database</span>
                         </div>
 
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Ver Projeto
-                        </a>
+                        <span class="text-accent font-bold hover:underline">
+                            Ver Projetos
+                        </span>
 
                     </div>
 
-                </div>
-
-                <!-- Excel Analytics -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up"
-                     data-aos-delay="100">
-
-                    <div class="p-8">
-
-                        <div class="mb-6">
-                            <i class="fa-solid fa-table text-5xl text-accent"></i>
-                        </div>
-
-                        <h2 class="text-2xl font-bold text-white mb-3">
-                            Excel Analytics
-                        </h2>
-
-                        <p class="text-gray-400 mb-6 leading-relaxed">
-                            Planilhas inteligentes para organização,
-                            indicadores e análise operacional.
-                        </p>
-
-                        <div class="flex gap-2 mb-6 flex-wrap">
-                            <span class="tag">Excel</span>
-                            <span class="tag">Dashboards</span>
-                            <span class="tag">KPIs</span>
-                        </div>
-
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Ver Projeto
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- Python Data -->
-                <div class="project-card glass rounded-3xl overflow-hidden group"
-                     data-aos="fade-up"
-                     data-aos-delay="200">
-
-                    <div class="p-8">
-
-                        <div class="mb-6">
-                            <i class="fa-brands fa-python text-5xl text-accent"></i>
-                        </div>
-
-                        <h2 class="text-2xl font-bold text-white mb-3">
-                            Python Data Projects
-                        </h2>
-
-                        <p class="text-gray-400 mb-6 leading-relaxed">
-                            Projetos em Python voltados para automação,
-                            análise de dados e processamento de informações.
-                        </p>
-
-                        <div class="flex gap-2 mb-6 flex-wrap">
-                            <span class="tag">Python</span>
-                            <span class="tag">Pandas</span>
-                            <span class="tag">Automation</span>
-                        </div>
-
-                        <a href="#" class="text-accent font-bold hover:underline">
-                            Repositório
-                        </a>
-
-                    </div>
-
-                </div>
+                </a>
 
             </div>
 
@@ -322,4 +261,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
