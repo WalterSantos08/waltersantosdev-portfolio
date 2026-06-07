@@ -227,3 +227,8 @@ a {
     }
 }
 
+.whatsapp-float i {
+    font-size: 38px !important;
+    color: #fff !important;
+    display: block;
+}
